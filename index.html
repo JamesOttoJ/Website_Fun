@@ -2,9 +2,37 @@
 <html>
     <head>
         <title>Main Page</title>
-        <link rel="stylesheet" src="/stylesheet.css" />
+        <link rel="stylesheet" href="stylesheet.css" />
     </head>
     <body>
-        <h1>Main Page</h1>
+        <div>
+            <h1>Main Page</h1>
+        </div>
+
+        <!--Tab Line-->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+        </div>
+
+        <!--Home Tab-->
+        <div id="Home" class="tabcontent">
+            <h2>Home Page</h2>
+            <p>Home Content</p>
+        </div>
+        
+        <!--About Tab-->
+        <div id="About" class="tabcontent">
+            <h2>About Page</h2>
+            <p>About Content</p>
+        </div>
+
+        <!--Contact Me Page-->
+        <div id="Contact" class="tabcontent">
+            <h2>Contact Me Page</h2>
+            <p>Contact Me Content</p>
+        </div>
     </body>
+    <script src="Tab_Manager.js"></script>
 </html>
