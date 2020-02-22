@@ -4,35 +4,48 @@
         <title>Main Page</title>
         <link rel="stylesheet" href="stylesheet.css" />
         <script src="Tab_Manager.js"></script>
+        <script src="https://kit.fontawesome.com/9c02dc5799.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div>
-            <h1>Main Page</h1>
+        <!--Page Heads-->
+        <div id="Home Head" class="tabcontent">
+            <h1>Home</h1>
+        </div>
+
+        <div id="About Head" class="tabcontent">
+            <h1>About</h1>
+        </div>
+
+        <div id="Contact Head" class="tabcontent">
+            <h1>Contact Me</h1>
         </div>
 
         <!--Tab Line-->
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
             <button class="tablinks" onclick="openTab(event, 'About')">About</button>
             <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
         </div>
 
         <!--Home Tab-->
         <div id="Home" class="tabcontent">
-            <h2>Home Page</h2>
+            <h3>Home Page</h3>
             <p>Home Content</p>
         </div>
         
         <!--About Tab-->
         <div id="About" class="tabcontent">
-            <h2>About Page</h2>
+            <h3>About Page</h3>
             <p>About Content</p>
         </div>
 
         <!--Contact Me Page-->
         <div id="Contact" class="tabcontent">
-            <h2>Contact Me Page</h2>
+            <h3>Contact Me Page</h3>
             <p>Contact Me Content</p>
         </div>
     </body>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
 </html>
